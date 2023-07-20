@@ -1,0 +1,5 @@
+##Pandas Datareader... simply importing CSV files
+
+import pandas as pd
+df = pd.read_csv('spy616.csv')
+df
