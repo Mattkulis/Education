@@ -6,10 +6,22 @@ data['Close'].plot()
 
 #setting x,y lable&title
 plt.xlabel('date', fontsize = 16)
-plt.ylabel('price',fotsize = 16)
+plt.ylabel('daily price',fotsize = 16)
 plt.title('Daily close price', fontsize = 16)
 
-  #Add grid
+#simple moving averages
+data['close'].rolling(20).mean().Plot()
+
+#add legend
+plt.legend  (['Close price', '20-day moving average'], fontsize = 12)
+
+ #Add grid
 plt.grid()
 plt.show()
 
+###20-day VWAP
+vwap = (data['Close']*data['Volume']).rolling(20).sum()/data['Volume'].rolling(20).sum()
+vwap.plot(color='m')
+plt.xlab
+plt.ylib...
+plt.legend (close price, 20-dayvwap)
