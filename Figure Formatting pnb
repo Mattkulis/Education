@@ -1,0 +1,15 @@
+##his is all syntax related info for producing visual displays...charts
+# specifically for backtesting in jupyter.
+  #fig size
+plt.figure (figsize=(12,8))
+data['Close'].plot()
+
+#setting x,y lable&title
+plt.xlabel('date', fontsize = 16)
+plt.ylabel('price',fotsize = 16)
+plt.title('Daily close price', fontsize = 16)
+
+  #Add grid
+plt.grid()
+plt.show()
+
