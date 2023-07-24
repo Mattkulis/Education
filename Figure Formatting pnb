@@ -25,3 +25,13 @@ vwap.plot(color='m')
 plt.xlab
 plt.ylib...
 plt.legend (close price, 20-dayvwap)
+
+
+##sci Kit Learn Package, showing correlation between instruments
+
+from sklearn.linear_model import LinearRegression
+   # Visualization syntax
+plt.scatter(ret['TICKER1'],ret['TICKER2'])
+plt.xlabel('daily return of Ticker1 :Label')
+ply.ylabel('daily return of Baseline ticker2 :Label')
+plt.show()
